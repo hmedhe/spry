@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; // prevent scroll on entire page
+}
+
+
+::ng-deep .mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0 ;
+    padding-bottom: 0;
+    
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+    height: 0 ;
+}
+
+@media screen and (max-width: 600px) {
+  .mat-mdc-paginator {
+    .mat-mdc-paginator-outer-container {
+      .mat-mdc-paginator-container {
+        justify-content: center !important;
+        font-size: 9px !important;
+        padding: 0 !important;
+        flex-wrap: wrap;
+
+        .mat-mdc-paginator-page-size {
+
+        .mat-mdc-paginator-page-size-select {
+                width: 60px;
+        }
+    }
+
+        .mat-mdc-paginator-page-size,
+        .mat-mdc-paginator-range-actions,
+        .mat-mdc-paginator-range-label {
+          margin: 2px 4px;
+        }
+
+        .mat-mdc-icon-button {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
+
